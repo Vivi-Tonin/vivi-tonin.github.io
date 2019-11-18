@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vitty</title>
+</head>
+<body>
+<script type="text/javascript">
+	function makeVivi () {
+		let vivi = document.createElement("div");
+		document.body.appendChild(vivi);
+		vivi.style.width ="60px";
+		vivi.style.height ="100px";
+		vivi.style.backgroundColor ="blue";
+		vivi.style.backgroundImage = "url(./cry. crying.jpg)"; 
+		vivi.style.backgroundSize = "cover";
+
+		vivi.addEventListener("click", 
+			function (event){
+			console.log(vivi.style);
+		});
+
+	makeVivi();
+
+</script>
+</body>
+</html>
