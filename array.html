@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#vivi{
+			width: 100px; 
+			height: 100px;
+			background-color:lightblue;
+			opacity: 0.7;
+		}
+	</style>
+</head>
+<body>
+	<input id="input"></input> 
+	<button id="button"> push me! </button>
+
+	<div id="vivi">
+		
+	</div>
+<script type="text/javascript">
+	var vivi = document.getElementById ("input");
+
+	var topings = ["sprinkles", "chocolate chips", "brownie bites", "cookie dough", "gummy bears", "oreos", "peanut butter cups" ];
+
+	var input = document.getElementById ("input");
+
+	var button = document.getElementById ("button"); 
+
+	function addToppings (){
+		toppings.push(input.value);
+		console.log(toppings); 
+	}
+
+	button.EventListener ("click", addTopping)
+
+	console.log(toppings[1])
+
+	toppings.push("cookie dough")
+vivi.addEventListener ("click", function() {vivi.innerText=breeds[Math.floor(Math.random()*6)]});
+
+</script>
+</body>
+</html>
