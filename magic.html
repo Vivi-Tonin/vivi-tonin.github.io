@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+    .silverfish {
+        width: 100px;
+        height: 150px;
+        background-image: url(silverfish.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin: 5px; 
+    }
+
+    .body {
+    	background-image:url(grass.png);
+    	margin: 0; 
+    }
+    </style>
+</head>
+
+<body background="grass.png">
+    <div class="silverfish"></div>
+    <script>
+    function makeSilverfish() {
+        var silverfish = document.createElement("div");
+        document.body.appendChild(silverfish);
+        silverfish.classList.add("silverfish");
+
+    }
+
+
+
+
+    for (var i = 0; i < 100; i = i + 1) {
+        makeSilverfish();
+    }
+    </script>
+</body>
+
+</html>
