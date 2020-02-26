@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #square {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="square"></div>
+    <script type="text/javascript">
+    var bug = document.getElementById("square");
+
+
+
+
+    bug.addEventListener("mousedown", function() {
+        document.addEventListener("mousemove", function move(event) {
+            console.log(event.clientX + "," + event.clinetY);
+            bug.style.left = event.clientX + "px";
+            bug.style.top = event.clientY + "px";
+
+                bug.addEventListener("mouseup", function(){document.removeEventListener("mousemove", move )})
+
+        })
+
+
+
+    });
+
+    </script>
+</body>
+
+</html>

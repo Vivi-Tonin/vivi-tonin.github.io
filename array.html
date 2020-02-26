@@ -21,23 +21,23 @@
 <script type="text/javascript">
 	var vivi = document.getElementById ("input");
 
-	var topings = ["sprinkles", "chocolate chips", "brownie bites", "cookie dough", "gummy bears", "oreos", "peanut butter cups" ];
+	var toppings = ["sprinkles", "chocolate chips", "brownie bites", "cookie dough", "gummy bears", "oreos", "peanut butter cups" ];
 
-	var input = document.getElementById ("input");
+	var input = document.getElementById("input");
 
-	var button = document.getElementById ("button"); 
+	var button = document.getElementById("button"); 
 
 	function addToppings (){
 		toppings.push(input.value);
 		console.log(toppings); 
 	}
 
-	button.EventListener ("click", addTopping)
+	button.addEventListener("click", addToppings)
 
-	console.log(toppings[1])
+// 	console.log(toppings[1])
 
-	toppings.push("cookie dough")
-vivi.addEventListener ("click", function() {vivi.innerText=breeds[Math.floor(Math.random()*6)]});
+// 	toppings.push("cookie dough")
+// vivi.addEventListener ("click", function() {vivi.innerText=toppings[Math.floor(Math.random()*6)]});
 
 </script>
 </body>
